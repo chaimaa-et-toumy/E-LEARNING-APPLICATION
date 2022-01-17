@@ -6,33 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Classe Sign In</title>
+    <meta name="keywords" content="YouCode,Youssoufia,E-Classe">
+    <meta name="description" content="application web pour les étudiants de YouCode">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         .bg-body {
             background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
-            height: 100vh;
         }
-/* 
-        html {
-            height: 100%;
-        } */
-
-        .form-class {
+         .form-class {
             box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
-        }
+            width: 25rem; 
+        } 
     </style>
 </head>
 
-<body class="bg-body container">
-    <main class="d-flex align-items-center justify-content-center vh-100">
-        <div class="container" style="height: 100%;">
-            <div class="row" style="height: 100%;">
-                <!-- offset = col 12 - 4 = 8 / 2 = 4 -->
-                
-                <form action="dashboard.html" method="post" class="col-sm-4 bg-white form-class offset-sm-4 align-self-center p-4">
+<body class="bg-body">
+    <main class="container-fluid"> 
+        <div class="d-flex align-items-center justify-content-center vh-100">
+                <form action="dashboard.html" method="post" class="card form-class col-md-4 p-4">
                     <h1 class="fw-bold border-start border-5 ps-2" style="border-left-color: #00c1fe !important; font-size: 29px;">E-classe
                     </h1>
 
@@ -58,10 +52,8 @@
                     <p class="text-muted text-center">forgot your password ? <a href="" class="text-info">Reset
                             Password</a></p>
                 </form>
-            </div>
         </div>
     </main>
-
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
