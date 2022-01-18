@@ -51,10 +51,9 @@
         .myside-bar {
             transition: 0.5s;
         }
-
         .toggle-myside-bar~.main-header,
         .toggle-myside-bar~.content-wrapper {
-            margin-left: 6rem;
+            margin-left: 5rem;
         }
 
         .toggle-myside-bar .toggle-hide {
@@ -64,6 +63,20 @@
         .toggle-myside-bar .toggle-font {
             font-size: 21px;
         }
+        @media screen and (max-width: 567px) {
+            .myside-bar {
+                width: 5rem;
+            }
+
+            .main-header,
+            .content-wrapper {
+                margin-left: 5rem;
+            }
+
+            .toggle-hide {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -72,7 +85,7 @@
         <div class="wrapper container-fluid" style="position: relative;">
 
             <!-- sidebar menu -->
-            <aside class="d-flex flex-column p-3  myside-bar bg-aside">
+            <aside class="d-flex flex-column px-3  myside-bar bg-aside">
                 <h3 class="mb-3">
                     <span class="fw-bold border-start border-5 ps-2 text-black toggle-font"
                         style="border-left-color: #00c1fe !important;">E-classe</span>
@@ -175,15 +188,18 @@
                 </a>
 
                 <!--  Right navbar links -->
-                <ul class="navbar-nav gap-4 d-flex align-items-center">
+                <ul class="navbar-nav gap-4 d-flex align-items-center pe-4">
                     <li class="nav-item">
                         <div class="input-group">
-                            <form class="form-inline">
-                                <input type="search" class="form-control" placeholder="Search..." />
+                            <form class="form-inline input-group">
+                                <input type="search" class="form-control" placeholder="Search...">
+                                <div class="input-group-append">
+
+                                    <button type="button" class="btn btn-white">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
                             </form>
-                            <button type="button" class="btn btn-white">
-                                <i class="fas fa-search"></i>
-                            </button>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -195,8 +211,8 @@
 
             
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper pt-3 justify-content-around row">
-                <div class="col-md-3 px-2">
+            <div class="content-wrapper pt-3 justify-content-around row me-0">
+                <div class="col-md-3 col-sm-6 px-2  my-2">
                     <div style="background-color: #F0F9FF;" class="rounded p-3 div-card">
                         <div class="mb-4">
                             <div class="mb-4">
@@ -224,7 +240,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 px-2">
+                <div class="col-md-3 col-sm-6 px-2  my-2">
                     <div style="background-color: #FEF6FB;" class="rounded p-3 div-card">
                         <div class="mb-4">
                             <div class="mb-4">
@@ -250,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 px-2">
+                <div class="col-md-3 col-sm-6 px-2  my-2">
                     <div style="background-color: #FEFBEC;" class="rounded p-3 div-card">
                         <div class="mb-4">
                             <div class="mb-4">
@@ -276,7 +292,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 px-2">
+                <div class="col-md-3 col-sm-6 px-2 my-2">
                     <div style="background: linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);"
                         class="rounded p-3 div-card">
                         <div class="mb-4">

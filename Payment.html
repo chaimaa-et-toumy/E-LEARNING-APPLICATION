@@ -19,8 +19,7 @@
         }
 
         .bg-content {
-            background: #e5e5e58f;
-            height: 106vh;
+            background: #f8f8f8;
         }
 
         .myside-bar {
@@ -28,6 +27,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            z-index: 10;
             /* bottom: 0; */
             min-height: 100vh;
             /* overflow: hidden; */
@@ -50,7 +50,7 @@
 
         .toggle-myside-bar~.main-header,
         .toggle-myside-bar~.content-wrapper {
-            margin-left: 6rem;
+            margin-left: 5rem;
         }
 
         .toggle-myside-bar .toggle-hide {
@@ -65,10 +65,25 @@
             background: #00C1FE;
             border-radius: 3px;
         }
+
+        @media screen and (max-width: 567px) {
+            .myside-bar {
+                width: 5rem;
+            }
+
+            .main-header,
+            .content-wrapper {
+                margin-left: 5rem;
+            }
+
+            .toggle-hide {
+                display: none;
+            }
+        }
     </style>
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini bg-content">
     <main>
         <div class="wrapper container-fluid">
             <!-- sidebar menu -->
@@ -164,7 +179,7 @@
             <!-- Main Sidebar Container -->
 
             <!-- Navbar -->
-            <nav class="main-header navbar navbar-expand navbar-light d-flex justify-content-between">
+            <nav class="main-header navbar navbar-expand navbar-light d-flex justify-content-between bg-white">
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button" onclick="togglesidebar()">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -175,15 +190,18 @@
                 </a>
 
                 <!--  Right navbar links -->
-                <ul class="navbar-nav gap-4 d-flex align-items-center">
+                <ul class="navbar-nav gap-4 d-flex align-items-center pe-4">
                     <li class="nav-item">
                         <div class="input-group">
-                            <form class="form-inline">
-                                <input type="search" class="form-control" placeholder="Search..." />
+                            <form class="form-inline input-group">
+                                <input type="search" class="form-control" placeholder="Search...">
+                                <div class="input-group-append">
+
+                                    <button type="button" class="btn btn-white">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
                             </form>
-                            <button type="button" class="btn btn-white">
-                                <i class="fas fa-search"></i>
-                            </button>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -194,8 +212,8 @@
             <!-- /.navbar -->
 
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper bg-content">
-                <div class="px-2">
+            <div class="content-wrapper">
+                <div class="px-2 overflow-auto">
                     <div class="d-flex justify-content-between pt-3 px-3">
                         <h1 class="text-capitalize h3 fw-bold">
                             payments details
@@ -210,15 +228,15 @@
                         </div>
 
                     </div>
-
+                    <div class="table-responsive">
                     <table class="table table-striped mt-1 table-hover">
                         <thead>
                             <tr style="color: #ACACAC;" class="text-center">
                                 <th scope="col">Name</th>
-                                <th scope="col">Payment Schedule</th>
-                                <th scope="col">Bill Number</th>
-                                <th scope="col">Amount Paid</th>
-                                <th scope="col">Balance amount</th>
+                                <th scope="col" class="text-nowrap">Payment Schedule</th>
+                                <th scope="col" class="text-nowrap">Bill Number</th>
+                                <th scope="col" class="text-nowrap">Amount Paid</th>
+                                <th scope="col" class="text-nowrap">Balance amount</th>
                                 <th scope="col">Date</th>
                                 <th scope="col" style="display: none;">pour accissibilite</th>
                                 <th scope="col" style="display: none;">pour accissibilite</th>
@@ -230,9 +248,9 @@
                                 <td>Karthi</td>
                                 <td>First</td>
                                 <td>00012223</td>
-                                <td>DHS 100,000</td>
-                                <td>DHS 500,000</td>
-                                <td>05-Jan, 2022</td>
+                                <td class="text-nowrap">DHS 100,000</td>
+                                <td class="text-nowrap">DHS 500,000</td>
+                                <td class="text-nowrap">05-Jan, 2022</td>
                                 <td></td>
                                 <td>
                                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
@@ -247,9 +265,9 @@
                                 <td>Karthi</td>
                                 <td>First</td>
                                 <td>00012223</td>
-                                <td>DHS 100,000</td>
-                                <td>DHS 500,000</td>
-                                <td>05-Jan, 2022</td>
+                                <td class="text-nowrap">DHS 100,000</td>
+                                <td class="text-nowrap">DHS 500,000</td>
+                                <td class="text-nowrap">05-Jan, 2022</td>
                                 <td></td>
                                 <td>
                                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
@@ -264,9 +282,9 @@
                                 <td>Karthi</td>
                                 <td>First</td>
                                 <td>00012223</td>
-                                <td>DHS 100,000</td>
-                                <td>DHS 500,000</td>
-                                <td>05-Jan, 2022</td>
+                                <td class="text-nowrap">DHS 100,000</td>
+                                <td class="text-nowrap">DHS 500,000</td>
+                                <td class="text-nowrap">05-Jan, 2022</td>
                                 <td></td>
                                 <td>
                                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
@@ -281,9 +299,9 @@
                                 <td>Karthi</td>
                                 <td>First</td>
                                 <td>00012223</td>
-                                <td>DHS 100,000</td>
-                                <td>DHS 500,000</td>
-                                <td>05-Jan, 2022</td>
+                                <td class="text-nowrap">DHS 100,000</td>
+                                <td class="text-nowrap">DHS 500,000</td>
+                                <td class="text-nowrap">05-Jan, 2022</td>
                                 <td></td>
                                 <td>
                                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
@@ -299,6 +317,7 @@
 
                         </tbody>
                     </table>
+                    </div>
                 </div>
             </div>
             <!-- /.content-wrapper -->
