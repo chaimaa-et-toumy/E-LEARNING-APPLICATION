@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Classe Dashboard</title>
-
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <style>
-        .bg-aside {
-            background-color: #FAFFC1;
-        }
-
         .link-hover:hover {
             background: #00C1FE;
             border-radius: 3px;
         }
-
+        .main-header,.content-wrapper {
+            margin-left: 16rem;
+        }
         .div-card {
             height: 180px;
         }
 
         .myside-bar {
             width: 16rem;
+            background-color: #FAFFC1;
             position: absolute;
             top: 0;
             left: 0;
-            /* bottom: 0; */
             min-height: 100vh;
-            /* overflow: hidden; */
         }
-
-        .main-header,
-        .content-wrapper {
-            margin-left: 16rem;
-        }
-
         .toggle-myside-bar {
             width: 5rem;
         }
@@ -51,15 +38,14 @@
         .myside-bar {
             transition: 0.5s;
         }
-        .toggle-myside-bar~.main-header,
-        .toggle-myside-bar~.content-wrapper {
-            margin-left: 5rem;
-        }
 
         .toggle-myside-bar .toggle-hide {
             display: none;
         }
-
+        .toggle-myside-bar~.main-header,
+        .toggle-myside-bar~.content-wrapper {
+            margin-left: 5rem;
+        }
         .toggle-myside-bar .toggle-font {
             font-size: 21px;
         }
@@ -80,134 +66,17 @@
     </style>
 </head>
 
-<body class="sidebar-mini">
+<body>
     <main>
-        <div class="wrapper container-fluid" style="position: relative;">
+        <div class="container-fluid" style="position: relative;">
 
             <!-- sidebar menu -->
-            <aside class="d-flex flex-column px-3  myside-bar bg-aside">
-                <h3 class="mb-3">
-                    <span class="fw-bold border-start border-5 ps-2 text-black toggle-font"
-                        style="border-left-color: #00c1fe !important;">E-classe</span>
-                </h3>
+            <?php include ("sidebar.php"); ?>
 
-                <div class="d-flex justify-content-center">
-                    <img src="img/youcode.png" class="mt-3 mb-3 rounded-circle w-75 " alt="User Image">
-                </div>
-
-                <div class="d-flex flex-column align-items-center mb-3 mt-1 pb-2">
-                    <p class="text-black fw-bold toggle-hide">Admin name</p>
-                    <a href="#" class="d-block text-primary nav-link"> Admin </a>
-                </div>
-
-                <ul class="nav  flex-column mb-auto">
-                    <li class="">
-                        <a href="#"
-                            class="nav-link active text-black rounded d-flex justify-content-evenly align-items-center"
-                            aria-current="page" style="background: #00C1FE;">
-                            <i class="fas fa-home-lg-alt"></i>
-                            <span class="toggle-hide">
-                                Home
-                            </span>
-                        </a>
-                    </li>
-                    <li class="link-hover">
-                        <a href="#" class="nav-link link-dark d-flex justify-content-evenly align-items-center">
-                            <i class="far fa-bookmark"></i>
-                            <span class="toggle-hide">
-                                Course
-                            </span>
-
-                        </a>
-                    </li>
-                    <li class="link-hover">
-                        <a href="student.html"
-                            class="nav-link link-dark d-flex justify-content-evenly align-items-center">
-                            <svg width="20" style="margin-top: 7px;" height="12" viewBox="0 0 20 12" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19.13 2.81219L10.8488 0.134689C10.2922 -0.0449982 9.70813 -0.0449982 9.15156 0.134689L0.870313 2.81219C0.341875 2.98313 0 3.44938 0 4C0 4.55063 0.341875 5.01688 0.87 5.18781L1.79844 5.48781C1.69531 5.68094 1.61906 5.88875 1.56938 6.10656C1.23531 6.26844 1 6.60375 1 7C1 7.39781 1.23656 7.735 1.57281 7.89594L1.00875 11.3916C0.958437 11.7038 1.13094 12 1.36312 12H2.63656C2.86875 12 3.04156 11.7038 2.99094 11.3916L2.42719 7.89594C2.76344 7.735 3 7.39781 3 7C3 6.66875 2.82844 6.38938 2.58031 6.20719C2.62687 6.06156 2.69906 5.93031 2.78562 5.80688L4.45656 6.34719L4 10C4 11.1047 6.68625 12 10 12C13.3138 12 16 11.1047 16 10L15.5434 6.34719L19.13 5.1875C19.6581 5.01688 20 4.55063 20 4C20 3.44938 19.6581 2.98313 19.13 2.81219ZM14.9838 9.93313C14.6475 10.2872 12.9388 11 10 11C7.06125 11 5.3525 10.2872 5.01625 9.93313L5.42531 6.66031L9.15156 7.865C9.23281 7.89125 9.95531 8.15344 10.8488 7.865L14.575 6.66031L14.9838 9.93313ZM18.8213 4.23688L10.54 6.91438C10.1866 7.02875 9.81344 7.02875 9.46 6.91438L3.97031 5.13938L10.0919 3.99125C10.3634 3.94063 10.5422 3.67938 10.4913 3.40781C10.4406 3.13594 10.1737 2.95813 9.90812 3.00875L3.54 4.2025C3.1525 4.275 2.80531 4.44156 2.50625 4.66594L1.17844 4.23656C0.933125 4.15688 0.945312 3.83844 1.17844 3.76313L9.45969 1.08563C9.93156 0.933127 10.3297 1.01781 10.5397 1.08563L18.8209 3.76313C19.0519 3.83781 19.0681 4.15688 18.8213 4.23688Z"
-                                    fill="black" />
-                            </svg>
-
-                            <span class="toggle-hide">
-                                Students
-                            </span>
-                        </a>
-                    </li>
-                    <li class="link-hover">
-                        <a href="Payment.html"
-                            class="nav-link link-dark d-flex justify-content-evenly align-items-center">
-                            <i class="fas fa-file-invoice-dollar"></i>
-                            <span class="toggle-hide">
-                                Payment
-                            </span>
-                        </a>
-                    </li>
-                    <li class="link-hover">
-                        <a href="#" class="nav-link link-dark d-flex justify-content-evenly align-items-center">
-                            <i class="fas fa-chart-line"></i>
-                            <span class="toggle-hide">
-                                Report
-                            </span>
-                        </a>
-                    </li>
-                    <li class="link-hover">
-                        <a href="sign-in.html"
-                            class="nav-link link-dark d-flex justify-content-evenly align-items-center">
-                            <i class="fas fa-cogs"></i>
-
-                            <span class="toggle-hide">
-                                Settings
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="">
-                    <a href="#" class="link-dark nav-link d-flex justify-content-evenly align-items-center">
-                        <i class="fas fa-sign-out-alt"></i>
-
-                        <span class="toggle-hide">
-                            logout
-                        </span>
-                    </a>
-
-                </div>
-            </aside>
-            <!-- Main Sidebar Container -->
-
+            <!-- End Sidebar -->
+            <?php include ("header.php"); ?>
             <!-- Navbar -->
-            <nav class="main-header navbar navbar-expand navbar-light d-flex justify-content-between">
-                <a class="nav-link" data-widget="pushmenu" href="#" role="button" onclick="togglesidebar()">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M17.7188 9C17.7188 4.18359 13.8164 0.28125 9 0.28125C4.18359 0.28125 0.28125 4.18359 0.28125 9C0.28125 13.8164 4.18359 17.7187 9 17.7188C13.8164 17.7188 17.7187 13.8164 17.7188 9ZM9 16.5938C4.82695 16.5938 1.40625 13.2152 1.40625 9C1.40625 4.82695 4.78477 1.40625 9 1.40625C13.173 1.40625 16.5938 4.78477 16.5938 9C16.5938 13.173 13.2152 16.5938 9 16.5938ZM10.125 12.375L6.75 9L10.125 5.625L10.125 12.375ZM11.25 5.625C11.25 4.62656 10.0371 4.12031 9.33047 4.83047L5.95547 8.20547C5.51602 8.64492 5.51602 9.35859 5.95547 9.79805L9.33047 13.173C10.0371 13.8797 11.25 13.3805 11.25 12.3785L11.25 5.625Z"
-                            fill="#C4C4C4" />
-                    </svg>
-
-                </a>
-
-                <!--  Right navbar links -->
-                <ul class="navbar-nav gap-4 d-flex align-items-center pe-4">
-                    <li class="nav-item">
-                        <div class="input-group">
-                            <form class="form-inline input-group">
-                                <input type="search" class="form-control" placeholder="Search...">
-                                <div class="input-group-append">
-
-                                    <button type="button" class="btn btn-white">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <i class="far fa-bell"></i>
-                    </li>
-                </ul>
-            </nav>
-            <!-- /.navbar -->
+            <!-- ENd navbar -->
 
             
             <!-- Content Wrapper. Contains page content -->
@@ -264,7 +133,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+             </div>
 
                 <div class="col-md-3 col-sm-6 px-2  my-2">
                     <div style="background-color: #FEFBEC;" class="rounded p-3 div-card">
@@ -320,15 +189,8 @@
                 </div>
 
             </div>
-            <!-- /.content-wrapper -->
-
-            <!-- Main Footer -->
-            <!-- <footer class="main-footer">
-      </footer> -->
         </div>
     </main>
-
-    <!-- ./wrapper -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <script>
