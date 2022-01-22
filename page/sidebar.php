@@ -16,15 +16,14 @@ echo '
 </div>
 
 <ul class="nav flex-column">
-    <li>
-        <a href="#"
-            class="nav-link active text-black rounded d-flex justify-content-evenly align-items-center"
-            style="background: #00C1FE;">
-            <i class="fas fa-home-lg-alt"></i>
-            <span class="toggle-hide">
-                Home
-            </span>
-        </a>
+    <li class="link-hover">
+        <a href="dashboard.php" class="nav-link text-black d-flex justify-content-evenly align-items-center">
+        <i class="fas fa-home-lg-alt"></i>
+        <span class="toggle-hide">
+            Home
+        </span>
+
+    </a>
     </li>
     <li class="link-hover">
         <a href="#" class="nav-link text-black d-flex justify-content-evenly align-items-center">
@@ -84,8 +83,8 @@ echo '
         </a>
     </li>
 </ul>
-<div class="">
-    <a href="#" class="text-black nav-link d-flex justify-content-evenly align-items-center">
+<div class="link-hover">
+    <a href="index.php" class="text-black nav-link d-flex justify-content-evenly align-items-center">
         <i class="fas fa-sign-out-alt"></i>
 
         <span class="toggle-hide">

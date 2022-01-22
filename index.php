@@ -7,23 +7,14 @@
     <title>E-Classe Sign In</title>
     <meta name="keywords" content="YouCode,Youssoufia,E-Classe">
     <meta name="description" content="application web pour les étudiants de YouCode">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        .bg-body {
-            background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
-        }
-         .form-class {
-            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 20px;
-            width: 25rem; 
-        } 
-    </style>
 </head>
 
 <body class="bg-body">
     <main class="container-fluid"> 
         <div class="d-flex align-items-center justify-content-center vh-100">
-                <form action="dashboard.html" method="post" class="card form-class p-4">
+                <form action="dashboard.php" method="post" class="card form-class p-4">
                     <h1 class="fw-bold border-start border-5 ps-2" 
                         style="border-left-color: #00c1fe !important; font-size: 29px;">E-classe
                     </h1>
@@ -47,7 +38,7 @@
                         <button class="btn btn-info w-100 text-white" type="button">SIGN IN</button>
                     </div>
 
-                    <p class="text-muted text-center">forgot your password ? <a href="" class="text-info">Reset
+                    <p class="text-muted text-center">forgot your password ? <a href="#" class="text-info">Reset
                             Password</a></p>
                 </form>
         </div>

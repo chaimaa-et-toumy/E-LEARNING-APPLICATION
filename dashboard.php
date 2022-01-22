@@ -2,67 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Classe Dashboard</title>
+    <meta name="keywords" content="YouCode,Youssoufia,E-Classe">
+    <meta name="description" content="application web pour les étudiants de YouCode">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-        .link-hover:hover {
-            background: #00C1FE;
-            border-radius: 3px;
-        }
-        .main-header,.content-wrapper {
-            margin-left: 16rem;
-        }
-        .div-card {
-            height: 180px;
-        }
-
-        .myside-bar {
-            width: 16rem;
-            background-color: #FAFFC1;
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-height: 100vh;
-        }
-        .toggle-myside-bar {
-            width: 5rem;
-        }
-
-        .content-wrapper,
-        .main-header,
-        .myside-bar {
-            transition: 0.5s;
-        }
-
-        .toggle-myside-bar .toggle-hide {
-            display: none;
-        }
-        .toggle-myside-bar~.main-header,
-        .toggle-myside-bar~.content-wrapper {
-            margin-left: 5rem;
-        }
-        .toggle-myside-bar .toggle-font {
-            font-size: 21px;
-        }
-        @media screen and (max-width: 567px) {
-            .myside-bar {
-                width: 5rem;
-            }
-
-            .main-header,
-            .content-wrapper {
-                margin-left: 5rem;
-            }
-
-            .toggle-hide {
-                display: none;
-            }
-        }
+    .main-header,.content-wrapper {
+        margin-left: 16rem;
+    }
     </style>
 </head>
 
@@ -71,15 +23,15 @@
         <div class="container-fluid" style="position: relative;">
 
             <!-- sidebar menu -->
-            <?php include ("sidebar.php"); ?>
-
+            <?php include ("page/sidebar.php"); ?>
             <!-- End Sidebar -->
-            <?php include ("header.php"); ?>
+            
             <!-- Navbar -->
+            <?php include ("page/header.php"); ?>
             <!-- ENd navbar -->
 
             
-            <!-- Content Wrapper. Contains page content -->
+            <!-- Contains page content -->
             <div class="content-wrapper pt-3 justify-content-around row me-0">
                 <div class="col-md-3 col-sm-6 px-2  my-2">
                     <div style="background-color: #F0F9FF;" class="rounded p-3 div-card">
