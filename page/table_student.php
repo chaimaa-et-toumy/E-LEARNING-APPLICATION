@@ -1,46 +1,46 @@
 <?php
 $table_student = array(
     array(
-        'Username',
-        'user@email.com',
-        '7305477760',
-        '1234567305477760',
-        '08-Dec, 2021'
+        'Name' => 'Username',
+        'Email' => 'user@email.com',
+        'Phone' => '7305477760',
+        'Enroll Number' => '1234567305477760',
+        'Date of admission'=> '08-Dec, 2021'
     ),
     array(
-        'Username',
-        'karthi@email.com',
-        '7305477760',
-        '1234567305477760',
-        '08-Dec, 2021'
+        'Name' => 'Username',
+        'Email' => 'khathi@email.com',
+        'Phone' => '7305477760',
+        'Enroll Number' => '1234567305477760',
+        'Date of admission'=> '08-Dec, 2021'
     ),
     array(
-        'Username',
-        'karthi@email.com',
-        '7305477760',
-        '1234567305477760',
-        '08-Dec, 2021'
+        'Name' => 'Username',
+        'Email' => 'khathi@email.com',
+        'Phone' => '7305477760',
+        'Enroll Number' => '1234567305477760',
+        'Date of admission'=> '08-Dec, 2021'
     ),
     array(
-        'Username',
-        'karthi@email.com',
-        '7305477760',
-        '1234567305477760',
-        '08-Dec, 2021'
+        'Name' => 'Username',
+        'Email' => 'khathi@email.com',
+        'Phone' => '7305477760',
+        'Enroll Number' => '1234567305477760',
+        'Date of admission'=> '08-Dec, 2021'
     ),
     array(
-        'Username',
-        'karthi@email.com',
-        '7305477760',
-        '1234567305477760',
-        '08-Dec, 2021'
+        'Name' => 'Username',
+        'Email' => 'khathi@email.com',
+        'Phone' => '7305477760',
+        'Enroll Number' => '1234567305477760',
+        'Date of admission'=> '08-Dec, 2021'
     ),
     array(
-        'Username',
-        'karthi@email.com',
-        '7305477760',
-        '1234567305477760',
-        '08-Dec, 2021'
+        'Name' => 'Username',
+        'Email' => 'khathi@email.com',
+        'Phone' => '7305477760',
+        'Enroll Number' => '1234567305477760',
+        'Date of admission' => '08-Dec, 2021'
     )
 );
 ?>
@@ -58,23 +58,24 @@ $table_student = array(
         </tr>
     </thead>
     <tbody class="border-top-0">
-        <?php
-            foreach($table_student as $key => $val){
-                echo"
-                    <tr class=\"bg-white text-center\">
+    
+            <?php
+                foreach($table_student as $key):
+            ?>
+             <tr class="bg-white text-center">
                     <td>
-                        <img src=\"img/profile.png\" alt=\"\">
+                        <img src="img/profile.png" alt="profile">
                     </td>
-                    <td> $val[0] </td>
-                    <td> $val[1] </td>
-                    <td> $val[2] </td>
-                    <td> $val[3] </td>
-                    <td> $val[4] </td>
-                    <td  style=\"cursor: pointer;\"> <i class=\"fa fa-pen text-info\"></i> </td>
-                    <td  style=\"cursor: pointer;\"> <i class=\"fa fa-trash text-info\"></i> </td>
+                    <td class="align-middle">  <?php echo $key['Name']; ?> </td>
+                    <td class="align-middle">  <?php echo $key['Email']; ?></td>
+                    <td class="align-middle">  <?php echo $key['Phone']; ?></td>
+                    <td class="align-middle">  <?php echo $key['Enroll Number']; ?> </td>
+                    <td class="align-middle">  <?php echo $key['Date of admission'] ;?> </td>
+                    <td style="cursor: pointer;" class="align-middle"> <i class="fa fa-pen text-info"></i> </td>
+                    <td style="cursor: pointer;" class="align-middle"> <i class="fa fa-trash text-info"></i> </td>
                     </tr>
-                ";
-            }
-        ?>
+            <?php endforeach;
+            ?>
+        
     </tbody>
 </table>
