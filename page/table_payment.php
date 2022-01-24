@@ -1,37 +1,36 @@
 <?php
   $payment = array(
 	array(
-		'karthi',
-		'First',
-		 '0001223',
-		'DHS 100.000',
-		'DHS 500.000',
-		'05-Jan,2022',
-        '<i class=\"fa fa-pen text-info\"></i>'
+		'name'=>'karthi',
+		'Payment Schedule' => 'First',
+		'Bill Number' => '0001223',
+		'Amount Paid' => 'DHS 100.000',
+		'Balance amount'=> 'DHS 500.000',
+		'Date' =>'05-Jan,2022',
     ),
 	array(    
-		'karthi',
-		'First',
-        '0001223',
-		'DHS 100.000',
-		'DHS 500.000',
-		'05-Jan,2022',
+        'name'=>'karthi',
+		'Payment Schedule' => 'First',
+		'Bill Number' => '0001223',
+		'Amount Paid' => 'DHS 100.000',
+		'Balance amount'=> 'DHS 500.000',
+		'Date' =>'05-Jan,2022',
 	),
 	array(    
-		'karthi',
-		'First',
-        '0001223',
-		'DHS 100.000',
-		'DHS 500.000',
-		'05-Jan,2022',
+        'name'=>'karthi',
+		'Payment Schedule' => 'First',
+		'Bill Number' => '0001223',
+		'Amount Paid' => 'DHS 100.000',
+		'Balance amount'=> 'DHS 500.000',
+		'Date' =>'05-Jan,2022',
     ),
     array(    
-		'karthi',
-		'First',
-        '0001223',
-		'DHS 100.000',
-		'DHS 500.000',
-		'05-Jan,2022',
+        'name'=>'karthi',
+		'Payment Schedule' => 'First',
+		'Bill Number' => '0001223',
+		'Amount Paid' => 'DHS 100.000',
+		'Balance amount'=> 'DHS 500.000',
+		'Date' =>'05-Jan,2022',
 	)
 );
     
@@ -49,19 +48,21 @@
         </thead>
         <tbody class="border-top-0">
             <?php
-                foreach($payment as $key => $val) {
-                    echo
-                    "<tr class=\"text-center\">
-                    <td> $val[0] </td>
-                    <td> $val[1] </td>
-                    <td> $val[2] </td>
-                    <td> $val[3] </td>
-                    <td> $val[4] </td>
-                    <td class = \"text-nowrap\"> $val[5] </td>
-                    <td> <i class=\"fa fa-pen text-info\"></i> </td>
-                    <td> <i class=\"fa fa-trash text-info\"></i> </td>
-                    </tr>";
-                }
+                foreach($payment as $val):
             ?>
+                    <tr class="text-center">
+                    <td> <?php echo $val['name'] ?></td>
+                    <td> <?php echo $val['Payment Schedule'] ?> </td>
+                    <td> <?php echo $val['Bill Number'] ?> </td>
+                    <td> <?php echo $val['Amount Paid'] ?></td>
+                    <td> <?php echo $val['Balance amount'] ?> </td>
+                    <td class = "text-nowrap"> <?php echo $val['Date'] ?> </td>
+                    <td> <i class="fa fa-pen text-info"></i> </td>
+                    <td> <i class="fa fa-trash text-info"></i> </td>
+                    </tr>
+
+            <?php endforeach;
+            ?>
+
         </tbody>  
     </table>
