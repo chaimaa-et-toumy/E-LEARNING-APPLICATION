@@ -15,11 +15,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<<<<<<< HEAD
 <body class="bg-content">
-=======
-<body class="hold-transition bg-content">
->>>>>>> 553e42344acf2a79372766c758ddbba7b0709e66
     <main>
         <div class="wrapper container-fluid">
 
