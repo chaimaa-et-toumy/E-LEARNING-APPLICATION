@@ -7,7 +7,7 @@ echo '
 </h3>
 
 <div class="d-flex justify-content-center">
-    <img src="img/youcode.png" class="mt-1 mb-2 rounded-circle w-75 " alt="Admin image">
+    <img src="img/youcode.png" class="mt-1 mb-2 rounded-circle w-50 " alt="Admin image">
 </div>
 
 <div class="d-flex flex-column align-items-center mb-1 mt-1">
