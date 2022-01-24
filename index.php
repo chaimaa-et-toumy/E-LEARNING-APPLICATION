@@ -34,7 +34,7 @@
                         <input type="password" class="form-control mt-2" placeholder="Enter your password">
                     </div>
                     <div class="mb-3">
-                        <a href="dashboard.php" class="btn btn-info w-100 text-white" type="button">SIGN IN</a>
+                        <a href="dashboard.php" class="btn btn-info w-100 text-white">SIGN IN</a>
                     </div>
 
                     <p class="text-muted text-center">forgot your password ? <a href="#" class="text-info">Reset
