@@ -33,9 +33,8 @@
                         <label>Password</label>
                         <input type="password" class="form-control mt-2" placeholder="Enter your password">
                     </div>
-
                     <div class="mb-3">
-                        <button class="btn btn-info w-100 text-white" type="button">SIGN IN</button>
+                        <a href="dashboard.php" class="btn btn-info w-100 text-white" type="button">SIGN IN</a>
                     </div>
 
                     <p class="text-muted text-center">forgot your password ? <a href="#" class="text-info">Reset
