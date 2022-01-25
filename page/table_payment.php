@@ -6,37 +6,37 @@
 		'Bill Number' => '0001223',
 		'Amount Paid' => 'DHS 100.000',
 		'Balance amount'=> 'DHS 500.000',
-		'Date' =>'05-Jan,2022',
+		'Date' =>'05-Jan,2022'
     ),
 	array(    
-        'name'=>'karthi',
+                'name'=>'karthi',
 		'Payment Schedule' => 'First',
 		'Bill Number' => '0001223',
 		'Amount Paid' => 'DHS 100.000',
 		'Balance amount'=> 'DHS 500.000',
-		'Date' =>'05-Jan,2022',
+		'Date' =>'05-Jan,2022'
 	),
 	array(    
-        'name'=>'karthi',
+                'name'=>'karthi',
 		'Payment Schedule' => 'First',
 		'Bill Number' => '0001223',
 		'Amount Paid' => 'DHS 100.000',
 		'Balance amount'=> 'DHS 500.000',
-		'Date' =>'05-Jan,2022',
+		'Date' =>'05-Jan,2022'
     ),
-    array(    
-        'name'=>'karthi',
+   	 array(    
+                'name'=>'karthi',
 		'Payment Schedule' => 'First',
 		'Bill Number' => '0001223',
 		'Amount Paid' => 'DHS 100.000',
 		'Balance amount'=> 'DHS 500.000',
-		'Date' =>'05-Jan,2022',
+		'Date' =>'05-Jan,2022'
 	)
 );
     
 ?>
     <table class="table table-hover table-striped">
-        <thead>
+        <thead  style="border-top: 1px solid #E5E5E5">
             <tr class="text-center">
                 <th class="text-secondary">Name</th>
                 <th class="text-secondary text-nowrap">Payment Schedule</th>
