@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,12 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-    .main-header,.content-wrapper {
-        margin-left: 16rem;
-    }
+        .main-header,
+        .content-wrapper {
+            margin-left: 16rem;
+        }
     </style>
 </head>
 
@@ -25,12 +26,12 @@
             <!-- sidebar menu -->
             <?php include ("page/sidebar.php"); ?>
             <!-- End Sidebar -->
-            
+
             <!-- Navbar -->
             <?php include ("page/header.php"); ?>
             <!-- ENd navbar -->
 
-            
+
             <!-- Contains page content -->
             <div class="content-wrapper pt-3 justify-content-around row me-0">
                 <div class="col-md-3 col-sm-6 px-2  my-2">
@@ -85,7 +86,7 @@
                             </p>
                         </div>
                     </div>
-             </div>
+                </div>
 
                 <div class="col-md-3 col-sm-6 px-2  my-2">
                     <div style="background-color: #FEFBEC;" class="rounded p-3 div-card">

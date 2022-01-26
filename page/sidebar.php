@@ -1,23 +1,23 @@
 <?php
 echo '
 <aside class="d-flex flex-column px-2 myside-bar">
-<h3 class="mt-1">
+<h3 class="">
     <span class="fw-bold border-start border-5 ps-2 toggle-font"
         style="border-left-color: #00c1fe !important;">E-classe</span>
 </h3>
 
 <div class="d-flex justify-content-center">
-    <img src="img/youcode.png" class="mt-1 mb-2 rounded-circle w-50 " alt="Admin image">
+    <img src="img/youcode.png" class=" rounded-circle w-50" alt="Admin image">
 </div>
 
-<div class="d-flex flex-column align-items-center mb-1 mt-1">
+<div class="d-flex flex-column align-items-center ">
     <p class="text-black fw-bold toggle-hide">Admin name</p>
-    <a href="#" class="d-block text-primary nav-link"> Admin </a>
+    <a href="#" class=" text-primary nav-link"> Admin </a>
 </div>
 
 <ul class="nav flex-column">
     <li class="link-hover">
-        <a href="dashboard.php" class="nav-link text-black d-flex justify-content-evenly align-items-center">
+        <a href="dashboard.php" aria-label="home link"   class=" nav-link text-black d-flex justify-content-evenly align-items-center">
         <i class="fas fa-home-lg-alt"></i>
         <span class="toggle-hide">
             Home
@@ -26,7 +26,7 @@ echo '
     </a>
     </li>
     <li class="link-hover">
-        <a href="#" class="nav-link text-black d-flex justify-content-evenly align-items-center">
+        <a href="#"  aria-label="course link" class="nav-link  text-black d-flex justify-content-evenly align-items-center">
             <i class="far fa-bookmark"></i>
             <span class="toggle-hide">
                 Course
@@ -35,7 +35,7 @@ echo '
         </a>
     </li>
     <li class="link-hover">
-        <a href="student.php"
+        <a href="student.php" aria-label="student link"  
             class="nav-link text-black d-flex justify-content-evenly align-items-center">
             <svg width="20" style="margin-top: 7px;" height="12" viewBox="0 0 20 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -49,8 +49,8 @@ echo '
         </a>
     </li>
     <li class="link-hover">
-        <a href="Payment.php"
-            class="nav-link text-black d-flex justify-content-evenly align-items-center">
+        <a href="Payment.php" aria-label="payment link"
+            class="nav-link text-black  d-flex justify-content-evenly align-items-center">
             <i class="fas fa-file-invoice-dollar"></i>
             <span class="toggle-hide">
                 Payment
@@ -58,7 +58,7 @@ echo '
         </a>
     </li>
     <li class="link-hover">
-        <a href="#" class="nav-link text-black d-flex justify-content-evenly align-items-center">
+        <a href="#" aria-label="report link"  class="nav-link text-black d-flex justify-content-evenly align-items-center">
             <i class="fas fa-chart-line"></i>
             <span class="toggle-hide">
                 Report
@@ -66,8 +66,8 @@ echo '
         </a>
     </li>
     <li class="link-hover">
-        <a href="#"
-            class="nav-link text-black d-flex justify-content-evenly align-items-center">
+        <a href="#" aria-label="setting link" 
+            class="nav-link text-black d-flex  justify-content-evenly align-items-center">
             <i class="fas fa-cogs"></i>
 
             <span class="toggle-hide">
@@ -75,16 +75,10 @@ echo '
             </span>
         </a>
     </li>
-    <li >
-        <a href="#">
-            <span style="visibility: hidden;">
-                logout
-            </span>
-        </a>
-    </li>
+   
 </ul>
-<div class="link-hover">
-    <a href="index.php" class="text-black nav-link d-flex justify-content-evenly align-items-center">
+<div class="link-hover mt-5">
+    <a href="index.php"  aria-label="logout link" class="text-black nav-link d-flex justify-content-evenly align-items-center">
         <i class="fas fa-sign-out-alt"></i>
 
         <span class="toggle-hide">

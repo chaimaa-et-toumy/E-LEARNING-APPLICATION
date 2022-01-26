@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-    <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -44,9 +42,7 @@
 
                     </div>
                     <!-- table payment -->
-                    <div class="table-responsive">
-                        <?php include ("page/table_payment.php"); ?>
-                    </div>
+                    <?php include ("page/table_payment.php");?>
                     <!-- / .table payment -->
                 </div>
             </div>
