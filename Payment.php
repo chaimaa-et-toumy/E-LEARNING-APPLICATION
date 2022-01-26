@@ -7,10 +7,10 @@
     <title>E-Classe Payment</title>
     <meta name="keywords" content="YouCode,Youssoufia,E-Classe">
     <meta name="description" content="application web pour les étudiants de YouCode">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body class=" bg-content">
@@ -54,14 +54,4 @@
             </footer> -->
         </div>
     </main>
-    <!-- Bootstrap 5 -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script>
-        function togglesidebar() {
-            //querySelecteur selection element
-            var sidebar = document.querySelector(".myside-bar");
-            sidebar.classList.toggle("toggle-myside-bar");
-        }
-    </script>
-
-</html>
+<?php include('page/footer.php'); ?>

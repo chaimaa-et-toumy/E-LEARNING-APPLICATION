@@ -7,8 +7,8 @@
     <title>E-Classe Sign In</title>
     <meta name="keywords" content="YouCode,Youssoufia,E-Classe">
     <meta name="description" content="application web pour les étudiants de YouCode">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-body">

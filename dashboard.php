@@ -7,16 +7,10 @@
     <title>E-Classe Dashboard</title>
     <meta name="keywords" content="YouCode,Youssoufia,E-Classe">
     <meta name="description" content="application web pour les étudiants de YouCode">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        .main-header,
-        .content-wrapper {
-            margin-left: 16rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -144,14 +138,4 @@
             </div>
         </div>
     </main>
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        function togglesidebar() {
-            var sidebar = document.querySelector(".myside-bar");
-            sidebar.classList.toggle("toggle-myside-bar");
-        }
-    </script>
-</body>
-
-</html>
+    <?php include('page/footer.php'); ?>

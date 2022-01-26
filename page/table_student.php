@@ -42,7 +42,7 @@ $table_student = array(
     <table class="table mt-2 table-hover overflow-sm-auto">
         <thead style="border-top: 1px solid #E5E5E5">
             <tr style="color: #ACACAC;" class="fw-bold text-center">
-                <th scope="col" style="visibility : hidden"> pour accessibility</th>
+                <th scope="col"></th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Phone</th>

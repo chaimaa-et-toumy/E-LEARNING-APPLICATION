@@ -1,5 +1,3 @@
-<?php
-echo '
 <aside class="d-flex flex-column px-2 myside-bar">
 <h3 class="">
     <span class="fw-bold border-start border-5 ps-2 toggle-font"
@@ -88,4 +86,3 @@ echo '
 
 </div>
 </aside>
-';
