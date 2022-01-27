@@ -1,4 +1,4 @@
- /* page sign in  */
+ /* ------------------ sign in ------------------------ */
  .bg-body {
     background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
 }
@@ -8,33 +8,28 @@
     width: 25rem; 
 }
 
- /* page dashboard */
+ /* -------------------dashboard--------------------- */
  .div-card {
     height: 180px;
 }
 
-/* page student */
+/* ------------------- student ----------------------*/
 .bg-content {
     background: #f8f8f8;
 } 
-/* page student + payment + dashboard */
+/* -------------- student + payment + dashboard ------------*/
+.header-nav{
+    background-color: white !important;
+}
 .myside-bar {
     width: 16rem;
     background-color: #FAFFC1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    min-height: 100vh;
 }
 .main-header,.content-wrapper {
     margin-left: 16rem;
 }
 .toggle-myside-bar {
     width: 5rem;
-}
-.header-nav{
-    background-color: white !important;
 }
 .content-wrapper,
 .main-header,

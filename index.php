@@ -14,9 +14,9 @@
 <body class="bg-body">
     <main class="container-fluid">
         <div class="d-flex align-items-center justify-content-center vh-100">
-            <form action="dashboard.php" method="post" class="card form-class p-4">
-                <h1 class="fw-bold border-start border-5 ps-2"
-                    style="border-left-color: #00c1fe !important; font-size: 29px;">E-classe
+            <form action="#" method="post" class="card form-class p-4">
+                <h1 class="fw-bold border-start border-5 ps-2 h2"
+                    style="border-left-color: #00c1fe !important;">E-classe
                 </h1>
 
                 <div class="text-center">
@@ -24,12 +24,12 @@
                     <p class="text-muted"> Entrer your credentials to access your account</p>
                 </div>
 
-                <div class="form-group mb-3">
+                <div class="mb-3">
                     <label>Email</label>
                     <input type="email" class="form-control mt-2" placeholder="Enter your email">
                 </div>
 
-                <div class="form-group mb-4">
+                <div class="mb-4">
                     <label>Password</label>
                     <input type="password" class="form-control mt-2" placeholder="Enter your password">
                 </div>
