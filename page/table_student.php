@@ -34,6 +34,13 @@ $table_student = array(
         'Phone' => '7305477760',
         'Enroll Number' => '1234567305477760',
         'Date of admission'=> '08-Dec, 2021'
+    ),
+    array(
+        'Name' => 'Username',
+        'Email' => 'khathi@email.com',
+        'Phone' => '7305477760',
+        'Enroll Number' => '1234567305477760',
+        'Date of admission'=> '08-Dec, 2021'
     )
 );
 ?>

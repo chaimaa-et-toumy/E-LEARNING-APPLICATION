@@ -25,7 +25,7 @@
             <?php include ("page/header.php"); ?>
             <!-- /.navbar -->
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
+            <div class="content-wrapper pt-3">
                 <div class="px-3">
                     <div class="d-flex justify-content-between">
                         <h1 class="text-capitalize h3 fw-bold">
