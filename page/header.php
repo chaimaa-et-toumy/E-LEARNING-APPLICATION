@@ -1,4 +1,4 @@
-<nav class="main-header navbar navbar-expand navbar-light d-flex justify-content-between">
+<nav class=" header-nav main-header navbar navbar-expand  d-flex justify-content-between sticky-top ">
 <a class="nav-link" data-widget="pushmenu" aria-label="course link"  href="#" role="button" onclick="togglesidebar()">
     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

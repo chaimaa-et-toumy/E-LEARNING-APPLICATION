@@ -33,7 +33,9 @@
 .toggle-myside-bar {
     width: 5rem;
 }
-
+.header-nav{
+    background-color: white !important;
+}
 .content-wrapper,
 .main-header,
 .myside-bar {
