@@ -1,4 +1,4 @@
-<aside class="d-flex flex-column px-2 myside-bar">
+<aside class="myside-bar px-2 d-flex flex-column  vh-100">
 <h3 class="">
     <span class="fw-bold border-start border-5 ps-2 toggle-font"
         style="border-left-color: #00c1fe !important;">E-classe</span>
