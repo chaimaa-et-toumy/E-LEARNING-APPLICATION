@@ -26,7 +26,7 @@
 
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
-                <div class="px-2 overflow-auto">
+                <div class="px-2">
                     <div class="d-flex justify-content-between pt-3 px-3">
                         <h1 class="text-capitalize h3 fw-bold">
                             payments details
@@ -46,12 +46,7 @@
                     <!-- / .table payment -->
                 </div>
             </div>
-            <!-- /.content-wrapper -->
-
-
-            <!-- Main Footer -->
-            <!-- <footer class="main-footer">
-            </footer> -->
         </div>
+            <!-- /.content-wrapper -->
     </main>
-<?php include('page/footer.php'); ?>
+    <?php include('page/footer.php'); ?>

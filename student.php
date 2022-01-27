@@ -15,7 +15,7 @@
 
 <body class="bg-content">
     <main>
-        <div class="wrapper container-fluid">
+        <div class="container-fluid">
 
             <!-- sidebar menu -->
             <?php include ("page/sidebar.php"); ?>
@@ -48,11 +48,6 @@
 
                 </div>
             </div>
-            <!-- /.content-wrapper -->
-
-            <!-- Main Footer -->
-            <!-- <footer class="main-footer">
-            </footer> -->
         </div>
     </main>
 
